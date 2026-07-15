@@ -1,0 +1,351 @@
+/* Background */
+
+.login-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+
+    color:white;
+
+    font-family:'Segoe UI',sans-serif;
+
+}
+
+/* Left Panel */
+
+.login-left{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:80px;
+
+    animation:slideLeft .8s ease;
+
+}
+
+.login-left h1{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.login-left h2{
+
+    font-size:32px;
+
+    font-weight:500;
+
+    margin-bottom:40px;
+
+    line-height:1.5;
+
+}
+
+.feature{
+
+    font-size:20px;
+
+    margin:18px 0;
+
+    opacity:.95;
+
+}
+
+/* Right Panel */
+
+.login-right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    animation:slideRight .8s ease;
+
+}
+
+/* Glass Card */
+
+.login-card{
+
+    width:420px;
+
+    padding:45px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:0 15px 45px rgba(0,0,0,.35);
+
+}
+
+.login-card h2{
+
+    text-align:center;
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+.login-card p{
+
+    text-align:center;
+
+    opacity:.8;
+
+    margin-bottom:35px;
+
+}
+
+/* Inputs */
+
+.input-group{
+
+    position:relative;
+
+    margin-bottom:22px;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    padding:15px 48px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    background:white;
+
+    color:#222;
+
+    transition:.3s;
+
+    box-sizing:border-box;
+
+}
+
+.input-group input:focus{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(37,99,235,.25);
+
+}
+
+.input-icon{
+
+    position:absolute;
+
+    left:16px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#2563eb;
+
+}
+
+.eye{
+
+    position:absolute;
+
+    right:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:#555;
+
+}
+
+/* Remember */
+
+.login-options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:25px;
+
+    font-size:15px;
+
+}
+
+/* Button */
+
+.login-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    background:linear-gradient(90deg,#2563eb,#3b82f6);
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 30px rgba(59,130,246,.45);
+
+}
+
+.login-btn:disabled{
+
+    opacity:.7;
+
+    cursor:not-allowed;
+
+}
+
+/* Register */
+
+.register-text{
+
+    margin-top:28px;
+
+    text-align:center;
+
+    font-size:15px;
+
+}
+
+.register-text span{
+
+    margin-left:6px;
+
+    color:#93c5fd;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.register-text span:hover{
+
+    text-decoration:underline;
+
+}
+
+/* Animations */
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+    .login-page{
+
+        flex-direction:column;
+
+    }
+
+    .login-left{
+
+        padding:40px;
+
+        text-align:center;
+
+    }
+
+    .login-right{
+
+        padding:20px;
+
+    }
+
+    .login-card{
+
+        width:100%;
+
+        max-width:420px;
+
+    }
+
+}
