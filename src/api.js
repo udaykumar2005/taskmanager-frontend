@@ -1,5 +1,5 @@
-const API =
-  process.env.REACT_APP_API_URL ||
-  "https://taskmanager-backend-production-e7fb.up.railway.app";
+const API = "https://taskmanager-backend-production-e7fb.up.railway.app";
+
+console.log("API =", API);
 
 export default API;
